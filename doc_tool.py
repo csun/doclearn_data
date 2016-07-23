@@ -26,7 +26,7 @@ def main():
         project_data = json.loads(f.read())
 
     for sample in project_data['samples']:
-        print 'Reading next sample'
+        print 'Reading next sample from %s at line %d' % (sample['filename'], sample['start_line'])
         printDifferentiated('Sample code snippet:', sample['snippet_lines'])
 
         if sample['documentation'] and raw_input('Sample already has documentation. Overwrite? (y/n)') != 'y':
@@ -50,8 +50,8 @@ def main():
 
             if overwrite:
                 docs = overwrite
-
-            sample['documentation'][identifier] = docs
+            if docs and docs != 'None':
+                sample['documentation'][identifier] = docs
 
         print 'Writing to file'
         with open(output_file, 'w') as f:
