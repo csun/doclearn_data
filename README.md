@@ -7,3 +7,6 @@ Awesome Python readme collected at hash dc7080d3a6236e3b652507208ac385e232efab1e
 * Skipping python-short_url because no docs
 * PTVS does not appear to be a python project
 * supervisor doesn't have enough docs
+* dateutil just doesn't have the right docs / good examples.
+* neither does mechanicalsoup (very small)
+* quads is also very small
