@@ -29,7 +29,7 @@ class CodeFile(object):
         confirmationLoop(self._getDescription)
 
         match_string = raw_input('Enter the start of the substring to match followed by an elipsis '
-                                 'and the end of the substring to match: ')
+                                 'and the end of the substring to match (use \\n for newlines): ')
         while match_string:
             self._addMatch(match_string)
             match_string = raw_input('Enter another match string, or nothing to finish: ')
@@ -52,7 +52,7 @@ class CodeFile(object):
         try:
             first_line = int(description_or_line)
             last_line = int(raw_input('Enter the last line number of the description: '))
-            self._sample['description'] = '\n'.join(self._code_lines[first_line - 1:last_line])
+            self._sample['description'] = ''.join(self._code_lines[first_line - 1:last_line])
         except ValueError:
             self._sample['description'] = description_or_line
 
@@ -66,6 +66,7 @@ class CodeFile(object):
             self._sample['related_lines'][match_key] = related_lines
 
     def _getMatchKey(self, match_string):
+        match_string = match_string.replace('\\n','\n')
         match_components = match_string.lower().split('...')
         lowercase_description = self._sample['description'].lower()
         match_start = lowercase_description.find(match_components[0])
