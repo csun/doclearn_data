@@ -10,3 +10,4 @@ Awesome Python readme collected at hash dc7080d3a6236e3b652507208ac385e232efab1e
 * dateutil just doesn't have the right docs / good examples.
 * neither does mechanicalsoup (very small)
 * quads is also very small
+* Redis got some examples, but kinda hard because most of the things just call out to redis
