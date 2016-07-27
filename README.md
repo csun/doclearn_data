@@ -20,3 +20,8 @@ Awesome Python readme collected at hash dc7080d3a6236e3b652507208ac385e232efab1e
 * not much in wdb
 * not much in pyautogui
 * doitlive
+* facepi just api wrapper
+* bashplotlib
+* pythonidae is not python
+* asciimatics doesn't really have functions
+* pycallgraph too bare
