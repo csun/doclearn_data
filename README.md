@@ -12,3 +12,5 @@ Awesome Python readme collected at hash dc7080d3a6236e3b652507208ac385e232efab1e
 * quads is also very small
 * Redis got some examples, but kinda hard because most of the things just call out to redis
 * django whatever had a bunch of files but couldnt find examples
+* just no docs in sixpack
+* plyvel not python
