@@ -17,3 +17,6 @@ Awesome Python readme collected at hash dc7080d3a6236e3b652507208ac385e232efab1e
 * jedi docstrings mostly describe functions and little gotchas about them - not what they do
 * Not enough ggplot doc
 * scikit-video is not doc'd
+* not much in wdb
+* not much in pyautogui
+* doitlive
