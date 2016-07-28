@@ -25,3 +25,7 @@ Awesome Python readme collected at hash dc7080d3a6236e3b652507208ac385e232efab1e
 * pythonidae is not python
 * asciimatics doesn't really have functions
 * pycallgraph too bare
+* fake2db not enough docs
+* saws = bad
+* gunnery is useless
+* nose docs describe functions
